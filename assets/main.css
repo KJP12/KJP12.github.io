@@ -1,0 +1,125 @@
+
+.container {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    font-family: 'Arial', 'sans-serif';
+    background-color: #d7e2f4;
+    padding: 3px;
+    border: 3px solid #ebf1fa;
+    border-radius: 18pt;
+    max-width: 320pt;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    text-align: center;
+}
+
+div.p {
+    margin: 4pt 3pt;
+}
+
+.content {
+    margin-left: 8pt;
+}
+
+.section.links a span {
+    margin: 2pt;
+}
+
+.section.links a {
+    display: flex;
+    margin: 1pt 2pt;
+    padding: 2pt;
+    align-items: center;
+    border-radius: 8pt;
+}
+
+.section.links {
+    flex-flow: wrap;
+    margin: 4pt 0pt;
+}
+
+@media screen and (min-width: 260px) {
+    .container {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .omit {
+        display: none;
+    }
+}
+
+span#the-glitch-fake-icon {
+    color: #0D0;
+    margin: auto;
+    font-family: 'System', 'monospace';
+    width: 24px;
+    text-align: center;
+}
+
+a#the-glitch {
+    background-color: #EFE;
+    text-decoration: none;
+}
+
+a#the-glitch span.omit {
+    text-decoration: underline;
+}
+
+a#github {
+    --github-branding: #1b1817;
+    background-color: #FFF;
+}
+
+a#modrinth {
+    --modrinth-branding: #0abf71;
+    background-color: #DFFFEF
+}
+
+a#ko-fi {
+    background-color: #d2eef9;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    .container {
+        background-color: #030b49;
+        border: 3px solid #010419;
+    }
+    body {
+        background-color: #000;
+        color: #FFF;
+    }
+    a {
+        color: #7AF;
+    }
+    a:visited {
+        color: #FAF;
+    }
+    a#the-glitch {
+        background-color: #001800;
+    }
+    a#github {
+        --github-branding: #FFF;
+        background-color: #1b1817;
+    }
+    a#modrinth {
+        --modrinth-branding: #1DD76A;
+        background-color: #01180a;
+    }
+    a#ko-fi {
+        background-color: #06222d;
+    }
+}
+
+img {
+    border-radius: 16pt;
+}
